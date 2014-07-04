@@ -18,33 +18,12 @@
   </div>
 </div>
 <div id="completeContainer">
-<div id="completeButton" class="dropShadow">
-<div id="completePadding1">
+<button id="completeButton">
+<div id="buttonText">
+完<div id="spacer"></div>成
 </div>
-<div id="completePadding2">
-</div>
-<p id="completeText">
-完 成
-</p>
+</button>
 </div>
 </div>
-</div>
-<script>
-var completeButton = document.getElementById('completeButton');
-var onDown = function(e)
-{
-	this.classList.remove('dropShadow');
-	this.classList.add('insetShadow');
-}
-var onUp = function(e)
-{
-	this.classList.add('dropShadow');
-	this.classList.remove('insetShadow');
-}
-completeButton.addEventListener('mousedown',onDown,null);
-completeButton.addEventListener('touchstart',onDown,null);
-completeButton.addEventListener('mouseup',onUp,null);
-completeButton.addEventListener('touchend',onUp,null);
-</script>
 </body>
 </html>
