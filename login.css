@@ -1,0 +1,90 @@
+@charset "utf-8";
+/* CSS Document */
+
+.circular {
+	width:30%;
+	border-radius:100%;
+	margin-top:20%;
+	border:medium solid #facba9;
+}
+
+.center {
+	margin:0 auto;
+	width:100%;
+	text-align:center;
+}
+
+#loginContainer {
+	padding-top:30%;
+	width:100%;
+}
+
+#loginIcon {
+	vertical-align:text-middle;
+	width:24px;
+	padding-top:3px;
+	padding-left:3px;
+	position:absolute;
+}
+
+#loginWrapper {
+	display:inline-block;
+	border:1px solid #999;
+	padding:5px 5px;
+	border-radius:5px;
+	width:65%;
+	max-width:65%;
+	text-align:justify;
+}
+
+#inputWrapper {
+	margin-left:40px;
+}
+
+#login {
+	width:100%;
+	border:none;
+}
+
+#completeContainer {
+	margin-top:12.5%;
+}
+
+#completePadding1 {
+	width:50px;
+	display:inline;
+	height:100%;
+}
+#completePadding2 {
+	width:100%;
+	display:inline;
+	height:100%;
+}
+
+#completeButton {
+	background-color:#f16703;
+	width:65%;
+	margin:0 auto;
+	border-radius:3px;
+	padding:0px 5px;
+	height:34px;
+}
+
+.dropShadow {
+	box-shadow:0px 3px 4px #d05800;
+}
+
+.insetShadow {
+	box-shadow: inset 0px 3px 4px #d05800;
+}
+
+#completeText {
+	color:white;
+	font-size:1.1em;
+	padding-top:5px;
+	font-family:"Trebuchet MS", Arial, Helvetica, sans-serif;
+}
+
+input:focus {
+	outline:none;
+}
