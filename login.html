@@ -1,5 +1,5 @@
 <!doctype html>
-<html>
+<html class="no-js">
 <!--
 Author: Nathan Zhang, 2014
 -->
@@ -8,25 +8,65 @@ Author: Nathan Zhang, 2014
 <meta name="viewport" content="width=device-width, user-scalable=no, target-densitydpi=device-densitydpi">
 <title>Untitled Document</title>
 <link href="login.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="modernizr.js"></script>
+<script id="prefixfree" src="prefixfree.min.js"></script>
+<script>
+if (!(Modernizr.cssvhunit && Modernizr.cssvwunit))
+{
+	(function() {
+	 
+	if(!window.StyleFix) {
+		return;
+	}
+	 
+	// Feature test
+	var dummy = document.createElement('_').style,
+		units = ['vw', 'vh', 'vm'].filter(function(unit) {
+			dummy.width = '';
+			dummy.width = '10' + unit;
+			return !dummy.width;
+		});
+	 
+	if(!units.length) {
+		return;
+	}
+	 
+	StyleFix.register(function(css) {
+		var w = innerWidth, h = innerHeight, m = Math.min(w,h);
+		
+		return css.replace(RegExp('\\b([0-9]*\\.?[0-9]+)(' + units.join('|') + ')\\b', 'gi'), function($0, num, unit) {
+			switch (unit) {
+				case 'vw':
+					return (num * w / 100) + 'px';
+				case 'vh':
+					return num * h / 100 + 'px';
+				case 'vm':
+					return num * m / 100 + 'px';
+			}
+		});
+	});
+	 
+	})();
+}
+</script>
 </head>
 
 <body>
 <div class='center'><img class='circular' src="userimage.jpg"> </img>
-<div id="loginContainer">
-<div id="loginWrapper">
-	<img id="loginIcon" src="icon.png"></img>
-    <div id="inputWrapper">
-  <input type="text" name="login" id="login" placeholder="在这里填一下昵称吧"/>
+  <div id="loginContainer">
+    <div id="loginWrapper"> <img id="loginIcon" src="icon.png"></img>
+      <div id="inputWrapper">
+        <input type="text" name="login" id="login" placeholder="在这里填一下昵称吧"/>
+      </div>
+    </div>
   </div>
+  <div id="completeContainer">
+    <button id="completeButton" class="unpressed">
+    <div id="buttonText"> 完
+      <div id="spacer"></div>
+      成 </div>
+    </button>
   </div>
-</div>
-<div id="completeContainer">
-<button id="completeButton" class="unpressed">
-<div id="buttonText">
-完<div id="spacer"></div>成
-</div>
-</button>
-</div>
 </div>
 <script>
 var button = document.getElementById('completeButton');
@@ -37,6 +77,7 @@ button.addEventListener('mousedown',activate);
 button.addEventListener('touchstart',activate);
 button.addEventListener('mouseup',activate);
 button.addEventListener('touchend',activate);
+
 </script>
 </body>
 </html>
