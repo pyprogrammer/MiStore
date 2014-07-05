@@ -1,9 +1,11 @@
 @charset "utf-8";
 /* CSS Document */
 
+
 .circular {
-	width:30%;
+	width:30%;	
 	border-radius:100%;
+	margin-top:30%;
 	margin-top:15vh;
 	border:medium solid #facba9;
 }
@@ -13,9 +15,11 @@
 	width:100%;
 	text-align:center;
 	max-width:480px;
+	max-height:640px;
 }
 
 #loginContainer {
+	padding-top:30%;
 	padding-top:18.75vh;
 	width:100%;
 }
@@ -24,7 +28,7 @@
 	vertical-align:text-middle;
 	width:24px;
 	padding-top:3px;
-	padding-left:3px;
+	padding-left:5.25px;
 	position:absolute;
 }
 
@@ -39,7 +43,7 @@
 }
 
 #inputWrapper {
-	margin-left:40px;
+	margin-left:38px;
 }
 
 #login {
@@ -48,15 +52,25 @@
 }
 
 #completeContainer {
+	margin-top:30%;
 	margin-top:10vh;
 }
 
 #completeButton {
+	width:65%;
 	width:calc(65% + 8px);
 	height:34px;
 	border:none;
 	border-radius:5px;
 	background:#f16703;
+}
+
+.unpressed {
+	box-shadow:2px 4px 4px #d05800;
+}
+
+.pressed {
+	box-shadow:none;
 }
 
 #buttonText {
@@ -70,6 +84,6 @@
 	display:inline-block;
 }
 
-input:focus {
+:focus {
 	outline:none;
 }

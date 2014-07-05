@@ -1,5 +1,8 @@
 <!doctype html>
 <html>
+<!--
+Author: Nathan Zhang, 2014
+-->
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, user-scalable=no, target-densitydpi=device-densitydpi">
@@ -8,7 +11,7 @@
 </head>
 
 <body>
-<div class='center'> <img class='circular' src="userimage.jpg"> </img>
+<div class='center'><img class='circular' src="userimage.jpg"> </img>
 <div id="loginContainer">
 <div id="loginWrapper">
 	<img id="loginIcon" src="icon.png"></img>
@@ -18,12 +21,22 @@
   </div>
 </div>
 <div id="completeContainer">
-<button id="completeButton">
+<button id="completeButton" class="unpressed">
 <div id="buttonText">
 完<div id="spacer"></div>成
 </div>
 </button>
 </div>
 </div>
+<script>
+var button = document.getElementById('completeButton');
+function activate(){
+	this.classList.toggle('pressed');
+}
+button.addEventListener('mousedown',activate);
+button.addEventListener('touchstart',activate);
+button.addEventListener('mouseup',activate);
+button.addEventListener('touchend',activate);
+</script>
 </body>
 </html>
