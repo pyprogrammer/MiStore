@@ -1,33 +1,32 @@
 @charset "utf-8";
 /* CSS Document */
 
+body, html {
+	border: none;
+	padding: 0px;
+	margin: 0px;
+}
 
 .circular {
-	width:30%;	
+	width:260px;
+	height:260px;
 	border-radius:100%;
-	margin-top:15vh;
-	border:medium solid #facba9;
+	margin-top:194px;
+	border:8px solid #facba9;
+	background:url(userimage.jpg) no-repeat scroll;
+	background-size:260px 260px;
+	display:inline-block;
 }
 
 .center {
 	margin:0 auto;
 	width:100%;
 	text-align:center;
-	max-width:480px;
-	max-height:640px;
 }
 
 #loginContainer {
-	padding-top:18.75vh;
-	width:100%;
-}
-
-#loginIcon {
-	vertical-align:text-middle;
-	width:24px;
-	padding-top:3px;
-	padding-left:5.25px;
-	position:absolute;
+	margin-top:248px;
+	
 }
 
 #loginWrapper {
@@ -35,31 +34,47 @@
 	border:1px solid #999;
 	padding:5px 5px;
 	border-radius:5px;
-	width:65%;
-	max-width:65%;
+	width:464px;
 	text-align:justify;
+	height:80px;
 }
 
-#inputWrapper {
-	margin-left:38px;
+#loginIcon {
+	float:left;
+	height:30px;
+	margin: 26px 24px;
 }
+
+
+
+#inputWrapper {
+	float:left;
+	height:100%;
+	width:360px;
+}
+
+
 
 #login {
 	width:100%;
 	border:none;
+	padding:none;
+	height:30px;
+	margin-top:24px;
+	font-size:30px;
 }
 
 #completeContainer {
-	margin-top:10vh;
+	margin-top:96px;
+	margin-bottom:310px;
 }
 
 #completeButton {
-	width:65%;
-	width:calc(65% + 8px);
-	height:34px;
+	width:464px;
 	border:none;
 	border-radius:5px;
 	background:#f16703;
+	height:80px;
 }
 
 .unpressed {
@@ -72,12 +87,12 @@
 
 #buttonText {
 	color:white;
-	font-size:2em;
+	font-size:40px;
 	text-align:center;
 }
 
 #spacer {
-	width:2em;
+	width:62px;
 	display:inline-block;
 }
 
