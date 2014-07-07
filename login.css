@@ -8,13 +8,10 @@ body, html {
 }
 
 .circular {
-	width:260px;
-	height:260px;
+	width:35.5%;
 	border-radius:100%;
-	margin-top:194px;
+	margin-top:27.1%;
 	border:8px solid #facba9;
-	background:url(userimage.jpg) no-repeat scroll;
-	background-size:260px 260px;
 	display:inline-block;
 }
 
@@ -25,24 +22,36 @@ body, html {
 }
 
 #loginContainer {
-	margin-top:248px;
-	
+	margin-top:34.4%;
+}
+
+.stretchy {
+	width:64%;
+	padding-bottom:16.6%;
+	position:relative;
+}
+
+.stretchy > div {
+    position: absolute;
+    top: 0; bottom: 0; left: 0; right: 0;
 }
 
 #loginWrapper {
+	position:static;
+	margin:0 27.15%;
 	display:inline-block;
 	border:1px solid #999;
 	padding:5px 5px;
-	border-radius:5px;
-	width:464px;
+	border-radius:10px;
 	text-align:justify;
-	height:80px;
+	width:100%;
+	height:41.4%;
 }
 
 #loginIcon {
 	float:left;
-	height:30px;
-	margin: 26px 24px;
+	width: 6.6%;
+	margin: 3.5% 2.7%;
 }
 
 
@@ -50,7 +59,8 @@ body, html {
 #inputWrapper {
 	float:left;
 	height:100%;
-	width:360px;
+	width:calc(86.4%);
+	display: inline-block;
 }
 
 
@@ -59,22 +69,26 @@ body, html {
 	width:100%;
 	border:none;
 	padding:none;
-	height:30px;
-	margin-top:24px;
-	font-size:30px;
+	height:100%;
+	font-size:1.6em;
 }
 
 #completeContainer {
-	margin-top:96px;
-	margin-bottom:310px;
+	margin-top:12.5%;
 }
 
 #completeButton {
-	width:464px;
+	position:static;
+	margin:0 27.15%;
+	width:103%;
+	width:calc(100% + 12px);
+	height:calc(41.4% + 12px);
 	border:none;
 	border-radius:5px;
 	background:#f16703;
-	height:80px;
+	color:white;
+	font-size:40px;
+	letter-spacing:60px;
 }
 
 .unpressed {
