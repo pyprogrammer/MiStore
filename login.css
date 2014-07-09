@@ -24,7 +24,7 @@ html, body {
 	height:129px;
 	margin-top:96px;
 	display:inline-block;
-	border-radius:64.5px;
+	border-radius:50%;
 	border:5px solid #fa8028;
 	overflow:hidden;
 }
