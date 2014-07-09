@@ -1,0 +1,92 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0;x
+}
+
+#header {
+	height:204px;
+	background:#f16704;
+}
+
+#headerImage {
+	height:99px;
+	width:99px;
+	border-radius:100%;
+	border:none;
+	margin-top:44px;
+}
+
+#headerImageCaption {
+	color:white;
+	margin-top:17px;
+	font-size:17px;
+}
+
+#storage {
+	margin-top:31px;
+}
+
+.sectionCaption {
+	margin-left:21px;
+	margin-bottom:0px;
+	color:#e9a063;
+	font-size:20px;
+}
+
+.appList {
+	display:inline-block;
+	list-style-type:none;
+	padding:1px 22px 0 22px;
+}
+
+
+.app {
+	display:inline-block;
+	float:left;
+	margin: 19px 22.5px;
+}
+.appImage {
+	width:62px;
+	height:62px;
+	border-radius:20px;
+}
+
+.caption {
+	width:62px;
+	height:15px;
+	font-size:15px;
+	padding:0;
+	margin:0;
+	background-color:yellow; /*testing*/
+}
+
+#suggested {
+}
+
+#bottom {
+	margin: 43px auto 48px auto;
+	height:25px;
+	width:83px;
+}
+
+#loadMore {
+	height:100%;
+	width:100%;
+	outline:none;
+	border:none;
+	font-size:12px;
+}
+
+#loadMore img {
+	height:23px;
+	margin:1px 11px 1px 0;
+	vertical-align:middle;
+}
+
+.center {
+	margin:0 auto;
+	width:100%;
+	text-align:center;
+}
