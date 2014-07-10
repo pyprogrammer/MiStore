@@ -3,6 +3,7 @@
 
 html, body {
 	margin:0;
+	font-family:微软雅黑;
 }
 
 button {
@@ -11,179 +12,273 @@ button {
 }
 
 #header {
-	height: 171px;
-	background:#68cbb7;
+	height: 127px;
 }
 
 #appHeader {
-	margin-top:94px;
-	margin-left: 18px;
+	margin-top:50px;
+	margin-left: 62px;
+	min-width:233px;
+	width:65%;
 	display:inline-block;
+	vertical-align:middle;
+	height:56px;
 }
 
 #appIcon {
 	height:56px;
 	width:56px;
-	vertical-align:middle;
 }
 
-#appTitle{
-	display:inline-block;
-	margin-left:22px;
-	font-size:23px;
-	color:white;
+#appTitle {
+	font-size:16px;
+	margin:0;
+	padding-left:20px;
 }
 
 #description {
-	margin: 39px 25px 5px 25px;
+	margin: 28px 13px;
+	text-align:justify;
+}
+
+.icon {
+	margin:5px 40px 0 0;
+	padding:0 5px 0 5px;
+	float:right;
+	display:inline;
+	vertical-align:middle;
+	background-color:#FFF;
+}
+
+.sectionCaptionContainer {
+	vertical-align:middle;
+}
+
+.sectionCaptionContainer hr {
+	position:relative;
+	top:22.5px;
+	z-index:-5;
+	color:#f2f2f2;
+}
+
+.sectionCaption {
+	margin:0;
+	padding:0 5px;
+	margin-left:40px;
+	font-size:16px;
+	font-weight:normal;
+	display:inline-block;
+	background:#FFF;
+}
+
+#summary {
+	margin-top:19px;
+	padding-left:40px;
+	padding-right:40px;
+	font-size:12px;
 }
 
 #interaction {
 	text-align:center;
+	margin-left:63px;
+	margin-right:63px;
+	margin-bottom:13px;
 }
 
-#interaction button {
+.interaction div {
+	width:100%;
+}
+
+.interactButton {
+	margin-top:17px;
+	height:39px;
 	display:block;
-	margin-left:auto;
-	margin-right:auto;
+	width:100%;
+	background:none;
+	border-radius:5px;
+	border:1px solid #bbbbbb;
+	font-size:17px;
 }
 
-#thumbsUp {
-	height:53px;
-	min-width:53px;
-	border-radius:26.5px;
-	border:2px solid #e0c284;
-	background:#f9c11c;
-	outline:none;
-	width: calc(100% - 307px);
+.interactButton.selected {
+	color:#f16703;
+	border: 1px solid #f16703;
 }
 
-#thumbsUp img {
-	width:20px;
+.interactButton > div {
+	margin: 12px auto;
+	width: 110px;
+	height:100%;
+	text-align:left;
+}
+
+.interactInnerDiv {
+	width:110px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+.interactButton img {
+	height:15px;
+}
+
+
+
+#favorite .buttonIcon {
+	background:url(thumbs-up.png);
+	margin-right:20px;
+	background-size: 16px 16px;
+}
+
+#favorite.selected .buttonIcon {
+	background:url(thumbs-up-selected.png);
+	background-size: 16px 16px;
+}
+
+#download .buttonIcon {
+	background:url(download.png);
+	background-size: 16px 16px;
+}
+
+#download.selected .buttonIcon {
+	background:url(download-selected.png);
+	background-size: 16px 16px;
+}
+
+#save .buttonIcon {
+	background:url(save.png);
+	background-size: 16px 16px;
+}
+
+#save.selected .buttonIcon {
+	background:url(staricon-selected.png);
+	background-size: 16px 16px;
+}
+
+.buttonIcon {
+	height:16px;
+	width:16px;
+	display:inline-block;
 }
 
 #download {
-	margin-top:19px;
-	width:calc(100% - 112px);
-	height:53px;
-	background:#25a12e;
-	border-radius:5px;
-	color:white;
-	font-size:17px;
-}
-
-#save {
-	margin-top:19px;
-	width:calc(100% - 112px);
-	height:53px;
-	background:#ff9b19;
-	border-radius:5px;
-	color:white;
-	font-size:17px;
+	letter-spacing:15px;
 }
 
 #comments {
-	margin-top:49px;
+	margin-top:18px;
+	padding:0 13px;
 }
 
-#newComment {
-	margin-left:18px;
-	margin-right:18px;
-	display:inline-block;
-	width:calc(100% - 36px);
+#newCommentContainer {
+	height:108px;
+	margin-bottom:80px;
 }
 
-#newComment img {
-	width:45px;
-	height:45px;
-	border-radius:22.5px;
-	vertical-align:top;
+#userBox {
+	height:100%;
+	padding:21px 0;
+	width:66px;
+	float:left;
+}
+
+#commentInputWrapper {
+	padding-left:100px;
+	height:100%;
 }
 
 #commentInput {
-	margin:0;
-	padding:0;
-	height:74px;
-	width:calc(100% - 51px);
+	height:100%;
+	width:100%;
+	border-radius:5px;
+	outline:none;
 }
 
 #submitComment {
 	float:right;
-	text-align:center;
-	width:74px;
-	height:32px;
-	margin-top:15px;
-	padding:0;
-	background:#33cc00;
-	color:white;
-}
-
-#commentListTitle {
-	padding:7px 22px 7px 22px;
-	border-radius:5px;
-	border: 2px solid #f3f3f3;
-	margin:19px 8px 0 8px;
-}
-
-#commentList {
-	display:inline-block;
-	list-style:none;
 	width:100%;
+	margin-top:22px;
+	height:39px;
+	color:white;
+	background-color:#f16703;
+	border-radius:5px;
+	padding:0;
+	font-size:21px;
+	margin-bottom:0px;
+	box-shadow:0 3px #d05800;
+}
+
+#submitComment.selected {
+	margin-top:25px;
+	margin-bottom:0px;
+	box-shadow:none;
+}
+
+#loadedComments {
+	margin-top:29px;
+}
+
+#loadedComments .sectionCaption {
+	margin:0;
+}
+
+.commentList {
 	padding:0;
 	margin:13px 0 0 0;
 }
 
-.comment {
-	border-top:1px solid #e9edec;
-	padding-top:11px;
-	padding-left:18px;
-	padding-right:18px;
-	background:#f2f6f5;
-	vertical-align:top;
-	font-size:15px;
+.commentBox{
+	background:#f2f2f2;
+	padding:13px 9px;
+	list-style-type:none;
+	margin-top:11px;
 }
 
-.comment:last-child {
-	border-bottom:1px solid #e9edec;
+.userImage {
+	float:left;
+}
+
+.comment {
+	display:inline-block;
+	margin-left:20px;
+}
+
+.username {
+	font-size:13px;
+	padding:0;
+	margin:0;
 }
 
 .commentContent {
-	margin-left:54px;
-}
-
-.commentTitle {
-	display:inline;
+	font-size:11px;
 }
 
 .commentTime {
 	float:right;
-	color:#d1766c;
+	color:#aeaeae;
+	font-size:12px;
 }
 
-.commentText {
-	display:inline-block;
-	text-align:justify;
-}
-
-.userImage {
-	height:40px;
-	width:40px;
-	border-radius:20px;
-	float:left;
-}
-
-#footer {
+#bottom {
 	text-align:center;
-	width:100%;
-	margin-bottom:37px;
+	margin-left:63px;
+	margin-right:63px;
+	margin-bottom:13px;
+	margin-top:23px;
 }
 
 #loadMore {
-	width:calc(100% - 18px);
-	height:35px;
-	margin:0 auto;
-	background:#f2f2f2;
-	border:1px solid #a5a5a5;
-	border-radius: 5px;
+	height:39px;
+	background:none;
+	border-radius:5px;
+	border:1px solid #bbbbbb;
+	margin-top:17px;
+	display:block;
+	width:100%;
 	font-size:17px;
+}
+
+.round {
+	border-radius:50%;
 }

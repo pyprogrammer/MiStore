@@ -65,7 +65,7 @@ body {
 }
 
 #storage {
-	margin:0 40px;
+	margin:0 40px 50px 40px;
 }
 
 .icon {
@@ -133,6 +133,16 @@ body {
 	color:#666;
 }
 
+#loadStorage {
+	float:right;
+	background:none;
+	padding:5px;
+	font-size:13px;
+	border-radius:5px;
+	border:1px solid #CCC;
+	outline:none;
+}
+
 #suggested {
 	margin:0 40px;
 }
@@ -155,12 +165,12 @@ body {
 }
 
 .rotate {
-	-webkit-transform:rotate(360000deg);
-	-moz-transform:rotate(360000deg);
-	-webkit-transition-duration:1000s;	
-	-moz-transition-duration:1000s;
-	transform:rotate(360000deg);
-	transition-duration:1000s;
+	-webkit-transform:rotate(72000000deg);
+	-moz-transform:rotate(72000000deg);
+	-webkit-transition-duration:100000s;	
+	-moz-transition-duration:100000s;
+	transform:rotate(72000000deg);
+	transition-duration:100000s;
 	transition-timing-function:linear;
 }
 
