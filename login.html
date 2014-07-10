@@ -8,15 +8,26 @@
 <link href="login.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<div id="backdrop"> </div>
 <div id="top">
-  <div id="imageContainer"><img id="userImage" src="userimage.jpg" /></div>
+
+<div id="imageContainer">
+<div class="cutoff" id="cutoff">
+<div id="topBorder"></div>
+</div>
+<div id="bottomBorder"></div>
+<div id="imageWrapper">
+<img id="userimage" src="userimage.jpg" height="130" width="130" />
+</div>
+
+</div>
 </div>
 <div id="bottom">
 <form action="">
   <div id="inputContainer">
     <div id="inputWrapper"> <img id="userInputIcon" src="icon.png" />
+    <div id="userInputWrapper">
       <input id="userInput" type="text" name="username" placeholder="在这里填写一个昵称吧～"/>
+    </div>
     </div>
   </div>
   <div id="buttonContainer">
@@ -25,6 +36,8 @@
   </button>
   </div>
 </form>
+</div>
+<div id="bottomSpacer">
 </div>
 <script>
 (function(){
