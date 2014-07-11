@@ -9,13 +9,11 @@ body {
 .top {
 	text-align:center;
 	width:100%;
-	height:166px;
 
 }
 
 .top img {
-	height:166px;
-	width:360px;
+	width:100%;
 }
 
 .middle {
