@@ -1,0 +1,136 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	margin:0;
+}
+
+
+#top {
+	height:187px;
+	margin:0 auto 175px auto;
+	text-align:center;
+	background-color:#f86800;
+}
+
+#imageContainer {
+	width:140px;
+	height:140px;
+	margin:0 auto;
+	padding-top:96px;
+}
+
+#imageWrapper {
+	height:130px;
+	width:130px;
+	border-radius:50%;
+	overflow:hidden;
+	margin:5px;
+}
+
+#userImage {
+	height:130px;
+	width:130px;
+	border-radius:130px;
+}
+
+#cutoff {
+	position:absolute;
+	height:91px;
+	width:140px;
+	overflow:hidden;
+}
+
+#topBorder {
+	width:130px;
+	height:130px;
+	border-radius:130px;
+	border:5px solid #fa8028;
+	z-index:10;
+}
+
+#bottomBorder {
+	position:absolute;
+	width:130px;
+	height:130px;
+	border-radius:130px;
+	border:5px solid #ffe3d0;
+	z-index:-10;
+}
+
+#bottom {
+	text-align:center;
+	margin:0 auto;
+	width:65%;
+	min-width:233px;
+}
+
+#inputContainer {
+	width:100%;
+	height:40px;
+	border-radius:5px;
+	border:1px solid #bbbbbb;
+	margin:0 auto;
+}
+
+#inputWrapper {
+	height:14px;
+	width:100%;
+	margin:13px 12px 13px 12px;;
+}
+
+#userInputIcon {
+	height:14px;
+	float:left;
+	position:relative;
+}
+
+#userInputWrapper {
+	height:100%;
+	margin-left:38px;
+	margin-right:38px;
+}
+
+#userInput {
+	float:left;
+	height:14px;
+	width:100%;
+	font-size:13px;
+	padding:0;
+	border:none;
+	width:100%;
+	outline:none;
+}
+
+#buttonContainer {
+	margin-top:47px;
+}
+
+#submitButton {
+	height:39px;
+	width: 100%;
+	background-color:#f16703;
+	border-radius:5px;
+	outline:none;
+	border:none;
+	color:white;
+	font-size:20px;
+	letter-spacing:17px;
+}
+
+#bottomSpacer {
+	min-height:100px;
+	width:100%;
+}
+
+.unpressed {
+	box-shadow:0 3px 0 #d05800;
+	margin-bottom:3px;
+	margin-top:0;
+}
+
+.pressed {
+	box-shadow:none;
+	margin-top:3px;
+	margin-bottom:0;
+}

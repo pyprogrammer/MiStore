@@ -1,0 +1,183 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+	margin:0;
+	font-family:微软雅黑;
+}
+
+#top {
+	height:139px;
+	margin:0 auto 175px auto;
+	text-align:center;
+	background-color:#f86800;
+}
+
+#imageContainer {
+	width:140px;
+	height:140px;
+	margin:0 auto;
+	padding-top:56px;
+}
+
+#imageWrapper {
+	height:130px;
+	width:130px;
+	border-radius:50%;
+	overflow:hidden;
+	margin:5px;
+}
+
+#userImage {
+	height:130px;
+	width:130px;
+	border-radius:130px;
+}
+
+#cutoff {
+	position:absolute;
+	height:82px;
+	width:140px;
+	overflow:hidden;
+}
+
+#topBorder {
+	width:130px;
+	height:130px;
+	border-radius:130px;
+	border:5px solid #fa8028;
+	z-index:10;
+}
+
+#bottomBorder {
+	position:absolute;
+	width:130px;
+	height:130px;
+	border-radius:130px;
+	border:5px solid #ffe3d0;
+	z-index:-10;
+}
+
+#topCaption {
+	margin:39px 0 0 0;
+	color:#585858;
+	padding:0;
+}
+
+#storage {
+	margin:0 40px 50px 40px;
+}
+
+.icon {
+	margin:5px 40px 0 0;
+	padding:0 5px 0 5px;
+	float:right;
+	display:inline;
+	vertical-align:middle;
+	background-color:#FFF;
+}
+
+.sectionCaptionContainer {
+	vertical-align:middle;
+}
+
+.sectionCaptionContainer hr {
+	position:relative;
+	top:22.5px;
+	z-index:-5;
+	color:#f2f2f2;
+}
+
+.sectionCaption {
+	margin:0;
+	padding:0 5px;
+	margin-left:40px;
+	font-size:14px;
+	font-weight:normal;
+	display:inline-block;
+	background:#FFF;
+}
+
+.appList {
+	display:inline-block;
+	list-style-type:none;
+	padding:0;
+}
+
+
+.app {
+	display:inline-block;
+	float:left;
+	margin: 19px 22.5px;
+	width:60px;
+	text-align:center;
+}
+
+.app > a {
+	text-decoration:none;
+}
+
+.appImage {
+	width:55px;
+	height:55px;
+	border-radius:20px;
+}
+
+.caption {
+	width:60px;
+	height:30px;
+	font-size:12px;
+	padding:0;
+	margin:0;
+	text-align:center;
+	color:#666;
+	overflow:hidden;
+	display:block;
+}
+
+#loadStorage {
+	float:right;
+	background:none;
+	padding:5px;
+	font-size:13px;
+	border-radius:5px;
+	border:1px solid #CCC;
+	outline:none;
+}
+
+#suggested {
+	margin:0 40px;
+}
+
+#bottom {
+	margin: 25px auto 48px auto;
+	border-top:1px solid #f6f6f6;
+	height:25px;
+	width:100%;
+	text-align:center;
+}
+
+#loadMore {
+	margin-top:26px;
+	outline:none;
+	border:none;
+	padding:0;
+	background:none;
+	font-size:11px;
+}
+
+.rotate {
+	-webkit-transform:rotate(72000000deg);
+	-moz-transform:rotate(72000000deg);
+	-webkit-transition-duration:100000s;	
+	-moz-transition-duration:100000s;
+	transform:rotate(72000000deg);
+	transition-duration:100000s;
+	transition-timing-function:linear;
+}
+
+#loadMore img {
+	height:30px;
+	width:30px;
+	vertical-align:middle;
+}

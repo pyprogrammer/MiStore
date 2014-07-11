@@ -1,0 +1,284 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+	margin:0;
+	font-family:微软雅黑;
+}
+
+button {
+	border:none;
+	outline:none;
+}
+
+#header {
+	height: 127px;
+}
+
+#appHeader {
+	margin-top:50px;
+	margin-left: 62px;
+	min-width:233px;
+	width:65%;
+	display:inline-block;
+	vertical-align:middle;
+	height:56px;
+}
+
+#appIcon {
+	height:56px;
+	width:56px;
+}
+
+#appTitle {
+	font-size:16px;
+	margin:0;
+	padding-left:20px;
+}
+
+#description {
+	margin: 28px 13px;
+	text-align:justify;
+}
+
+.icon {
+	margin:5px 40px 0 0;
+	padding:0 5px 0 5px;
+	float:right;
+	display:inline;
+	vertical-align:middle;
+	background-color:#FFF;
+}
+
+.sectionCaptionContainer {
+	vertical-align:middle;
+}
+
+.sectionCaptionContainer hr {
+	position:relative;
+	top:22.5px;
+	z-index:-5;
+	color:#f2f2f2;
+}
+
+.sectionCaption {
+	margin:0;
+	padding:0 5px;
+	margin-left:40px;
+	font-size:16px;
+	font-weight:normal;
+	display:inline-block;
+	background:#FFF;
+}
+
+#summary {
+	margin-top:19px;
+	padding-left:40px;
+	padding-right:40px;
+	font-size:12px;
+}
+
+#interaction {
+	text-align:center;
+	margin-left:63px;
+	margin-right:63px;
+	margin-bottom:13px;
+}
+
+.interaction div {
+	width:100%;
+}
+
+.interactButton {
+	margin-top:17px;
+	height:39px;
+	display:block;
+	width:100%;
+	background:none;
+	border-radius:5px;
+	border:1px solid #bbbbbb;
+	font-size:17px;
+}
+
+.interactButton.selected {
+	color:#f16703;
+	border: 1px solid #f16703;
+}
+
+.interactButton > div {
+	margin: 12px auto;
+	width: 110px;
+	height:100%;
+	text-align:left;
+}
+
+.interactInnerDiv {
+	width:110px;
+	float:left;
+	margin:0;
+	padding:0;
+}
+
+.interactButton img {
+	height:15px;
+}
+
+
+
+#favorite .buttonIcon {
+	background:url(thumbs-up.png);
+	margin-right:20px;
+	background-size: 16px 16px;
+}
+
+#favorite.selected .buttonIcon {
+	background:url(thumbs-up-selected.png);
+	background-size: 16px 16px;
+}
+
+#download .buttonIcon {
+	background:url(download.png);
+	background-size: 16px 16px;
+}
+
+#download.selected .buttonIcon {
+	background:url(download-selected.png);
+	background-size: 16px 16px;
+}
+
+#save .buttonIcon {
+	background:url(save.png);
+	background-size: 16px 16px;
+}
+
+#save.selected .buttonIcon {
+	background:url(staricon-selected.png);
+	background-size: 16px 16px;
+}
+
+.buttonIcon {
+	height:16px;
+	width:16px;
+	display:inline-block;
+}
+
+#download {
+	letter-spacing:15px;
+}
+
+#comments {
+	margin-top:18px;
+	padding:0 13px;
+}
+
+#newCommentContainer {
+	height:108px;
+	margin-bottom:80px;
+}
+
+#userBox {
+	height:100%;
+	padding:21px 0;
+	width:66px;
+	float:left;
+}
+
+#commentInputWrapper {
+	padding-left:100px;
+	height:100%;
+}
+
+#commentInput {
+	height:100%;
+	width:100%;
+	border-radius:5px;
+	outline:none;
+}
+
+#submitComment {
+	float:right;
+	width:100%;
+	margin-top:22px;
+	height:39px;
+	color:white;
+	background-color:#f16703;
+	border-radius:5px;
+	padding:0;
+	font-size:21px;
+	margin-bottom:0px;
+	box-shadow:0 3px #d05800;
+}
+
+#submitComment.selected {
+	margin-top:25px;
+	margin-bottom:0px;
+	box-shadow:none;
+}
+
+#loadedComments {
+	margin-top:29px;
+}
+
+#loadedComments .sectionCaption {
+	margin:0;
+}
+
+.commentList {
+	padding:0;
+	margin:13px 0 0 0;
+}
+
+.commentBox{
+	background:#f2f2f2;
+	padding:13px 9px;
+	list-style-type:none;
+	margin-top:11px;
+}
+
+.userImage {
+	float:left;
+}
+
+.comment {
+	display:inline-block;
+	margin-left:20px;
+}
+
+.username {
+	font-size:13px;
+	padding:0;
+	margin:0;
+}
+
+.commentContent {
+	font-size:11px;
+}
+
+.commentTime {
+	float:right;
+	color:#aeaeae;
+	font-size:12px;
+}
+
+#bottom {
+	text-align:center;
+	margin-left:63px;
+	margin-right:63px;
+	margin-bottom:13px;
+	margin-top:23px;
+}
+
+#loadMore {
+	height:39px;
+	background:none;
+	border-radius:5px;
+	border:1px solid #bbbbbb;
+	margin-top:17px;
+	display:block;
+	width:100%;
+	font-size:17px;
+}
+
+.round {
+	border-radius:50%;
+}

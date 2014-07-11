@@ -1,0 +1,145 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="author" content="Nathan Zhang">
+<title>应用推荐</title>
+<link href="css/appdetail.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+<div id="header">
+  <table id="appHeader">
+    <tr>
+      <td><img src="images/appdetail/userimage.jpg" height="56" width="56" alt="no-image"/></td>
+      <td><h2 id="appTitle">Some Random Title</h2></td>
+    </tr>
+  </table>
+</div>
+<hr />
+<div id="description">
+  <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed aliquet, orci at rutrum aliquam, enim sapien pulvinar tortor, eget dapibus neque eros sit amet velit. Integer cursus nisi sed nunc interdum placerat. Nullam ante nisl, imperdiet non nulla ultricies, iaculis imperdiet nisl. Nam eu lacus iaculis neque mollis laoreet. Suspendisse malesuada nunc nec lectus dapibus, non mollis turpis mollis. Vestibulum id porta nisl. In non ipsum in est interdum venenatis.
+    
+    Quisque congue justo sem, eu venenatis enim gravida a. Cras cursus augue dui, eu pellentesque enim dignissim eget. Aliquam quam mi, rhoncus vel ipsum non, congue convallis nisi. Integer ac lectus nisi. Proin mattis aliquam velit, in mattis mauris vehicula quis. Cras libero orci, vulputate consequat iaculis vitae, tincidunt sed dui. Sed venenatis ante hendrerit sollicitudin sodales.
+    
+    Maecenas lacinia purus purus, placerat posuere lorem faucibus in. Integer sed lectus sagittis, porttitor enim eget, commodo tortor. In non metus interdum, molestie quam et, molestie sem. Integer justo lacus, dapibus eu tempor laoreet, malesuada quis neque. Nullam nunc ipsum, luctus mattis urna in, ullamcorper placerat neque. In sem sem, venenatis et feugiat vitae, rutrum vel enim. Fusce viverra augue at massa lacinia rhoncus. Fusce sed turpis in libero sodales tincidunt et eu sem. Duis iaculis libero eu tempor volutpat. Donec egestas pretium venenatis. Vivamus venenatis eleifend ligula, vitae sagittis enim molestie non. Donec fringilla elementum turpis. Mauris ligula tortor, adipiscing blandit rutrum nec, imperdiet in felis. Nam malesuada lorem ac dolor placerat, nec vestibulum dolor iaculis. Morbi vitae mi placerat, consequat felis vitae, tincidunt dui. Maecenas fringilla risus eros, nec fermentum justo cursus sed.
+    
+    Sed ullamcorper vitae felis a viverra. Aenean vel augue in leo auctor dictum sit amet sed lacus. Donec venenatis eleifend malesuada. Sed elit ante, rutrum sed convallis et, porttitor in elit. Aliquam bibendum lorem fringilla est dapibus dapibus. Maecenas iaculis quam sagittis nisi rhoncus, quis egestas justo lacinia. Aenean mauris massa, molestie sed ante sed, tincidunt accumsan velit. Sed ut egestas lacus, sit amet pellentesque orci. Nam convallis vestibulum porttitor. Proin lacinia adipiscing metus ut aliquet.
+    
+    Praesent ante risus, semper non magna et, tempor hendrerit elit. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Phasellus vestibulum elit bibendum est cursus consectetur. Vivamus non mi a mauris sagittis malesuada. Nullam vestibulum, neque in euismod consequat, velit justo pretium dui, id ultricies metus ipsum ac erat. Praesent justo dui, rhoncus sit amet porta eu, congue ac diam. Suspendisse tristique, elit eget placerat facilisis, massa erat ultricies nisl, et convallis nunc nulla id eros. Proin ut pellentesque lacus. Aenean sed ultrices sem. Donec fermentum, mi at vehicula malesuada, ipsum tellus convallis arcu, fringilla tincidunt enim libero sed tortor. Mauris placerat arcu eros, in cursus nisi vulputate hendrerit. Curabitur velit nulla, porttitor vel orci at, consequat sollicitudin nulla. Nunc eros nulla, bibendum ut lorem vitae, porttitor eleifend lectus. </p>
+</div>
+<div class="sectionCaptionContainer">
+  <hr />
+  <h2 class="sectionCaption"> 商店妹间断评测 </h2>
+  <img src="images/appdetail/summary-icon.png" class="icon" height="15" alt="->" /> </div>
+<p id="summary"> 使用任何一款VSCO的滤镜，都能够使照片模拟出不同胶片拍出来的效果。强烈推荐摄影发烧友下载. </p>
+<hr />
+<div id="interaction">
+  <div>
+    <button type="button" id="favorite" class="interactButton">
+    <div>
+      <div class="interactInnerDiv"> <span class="buttonIcon"></span> 赞一个</div>
+    </div>
+    </button>
+    <button type="button" id="download" class="interactButton">
+    <div>
+      <div class="interactInnerDiv"> <span class="buttonIcon"></span>&nbsp;下载</div>
+    </div>
+    </button>
+    <button type="button" id="save" class="interactButton" data-alternate="&nbsp;取消收藏">
+    <div>
+      <div class="interactInnerDiv"><span class="buttonIcon"></span> 加入收藏</div>
+    </div>
+    </button>
+  </div>
+</div>
+<hr />
+<div id="comments">
+  <div id="newCommentContainer">
+    <div id="userBox"> <img src="images/appdetail/userimage.jpg" height="66" width="66" class="round"/> </div>
+    <div id="commentInputWrapper">
+      <textarea id="commentInput" placeholder="评论一下吧～"></textarea>
+      <button id="submitComment" type="submit"> 提交 </button>
+    </div>
+  </div>
+  <div id="loadedComments">
+    <h2 class="sectionCaption">评论列表</h2>
+    <ul class="commentList">
+      <li class="commentBox"> <img src="images/appdetail/userimage.jpg" height="45" width="45" class="round userImage" />
+        <label class="commentTime">今天 19:20</label>
+        <div class="comment">
+          <h3 class="username">剪刀手</h3>
+          <p class="commentContent">很酷的应用，强烈推荐。</p>
+        </div>
+      </li>
+      <li class="commentBox"> <img src="images/appdetail/userimage.jpg" height="45" width="45" class="round userImage" />
+        <label class="commentTime">今天 19:20</label>
+        <div class="comment">
+          <h3 class="username">剪刀手</h3>
+          <p class="commentContent">很酷的应用，强烈推荐。</p>
+        </div>
+      </li>
+      <li class="commentBox"> <img src="images/appdetail/userimage.jpg" height="45" width="45" class="round userImage" />
+        <label class="commentTime">今天 19:20</label>
+        <div class="comment">
+          <h3 class="username">剪刀手</h3>
+          <p class="commentContent">很酷的应用，强烈推荐。</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+<div id="bottom">
+  <button id="loadMore"> 查看更多 </button>
+</div>
+<script>
+(function (){
+	var saveButton = document.getElementById('save');
+	saveButton.addEventListener('click',function(){
+		var textNode = this.getElementsByClassName('interactInnerDiv')[0].childNodes[1];
+		var text = textNode.textContent;
+		textNode.textContent = this.dataset.alternate;
+		this.dataset.alternate=text;
+	});
+	
+	var downloadButton = document.getElementById('download');
+	downloadButton.addEventListener('mouseup',function(){
+		var that = this;
+		setTimeout(function(){
+			that.classList.remove('selected');
+		},200);
+	});
+
+	
+	var interactButtons = document.getElementsByClassName('interactButton');
+	var button;
+	function toggleSelected()
+	{
+		this.classList.toggle('selected');
+	}
+	for (var i=0, len=interactButtons.length; i<len; i++)
+	{
+		button = interactButtons[i];
+		button.addEventListener('click',toggleSelected);
+	}
+	
+	
+	
+	var submitButton = document.getElementById('submitComment');
+	function down()
+	{
+		this.classList.add('selected');
+	}
+	function up()
+	{
+		this.classList.remove('selected');
+	}
+	submitButton.addEventListener('mousedown',down);
+	submitButton.addEventListener('touchstart',down);
+	submitButton.addEventListener('mouseup',up);
+	submitButton.addEventListener('touchend',up);
+})();
+</script>
+</body>
+</html>
