@@ -11,7 +11,7 @@ button {
 	outline:none;
 }
 
-#header {
+.top {
 	height: 127px;
 }
 
@@ -78,7 +78,7 @@ button {
 	font-size:12px;
 }
 
-#interaction {
+.interaction {
 	text-align:center;
 	margin-left:63px;
 	margin-right:63px;
@@ -166,7 +166,7 @@ button {
 	letter-spacing:15px;
 }
 
-#comments {
+.comments {
 	margin-top:18px;
 	padding:0 13px;
 }
@@ -260,7 +260,7 @@ button {
 	font-size:12px;
 }
 
-#bottom {
+.bottom {
 	text-align:center;
 	margin-left:63px;
 	margin-right:63px;

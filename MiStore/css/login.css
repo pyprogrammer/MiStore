@@ -6,7 +6,7 @@ html, body {
 }
 
 
-#top {
+.top {
 	height:187px;
 	margin:0 auto 175px auto;
 	text-align:center;
@@ -58,7 +58,7 @@ html, body {
 	z-index:-10;
 }
 
-#bottom {
+.bottom {
 	text-align:center;
 	margin:0 auto;
 	width:65%;

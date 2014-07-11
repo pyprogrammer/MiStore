@@ -6,7 +6,7 @@ body {
 	font-family:微软雅黑;
 }
 
-#top {
+.top {
 	height:139px;
 	margin:0 auto 175px auto;
 	text-align:center;
@@ -64,7 +64,7 @@ body {
 	padding:0;
 }
 
-#storage {
+.storage {
 	margin:0 40px 50px 40px;
 }
 
@@ -145,11 +145,11 @@ body {
 	outline:none;
 }
 
-#suggested {
+.suggested {
 	margin:0 40px;
 }
 
-#bottom {
+.bottom {
 	margin: 25px auto 48px auto;
 	border-top:1px solid #f6f6f6;
 	height:25px;
