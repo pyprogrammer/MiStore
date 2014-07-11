@@ -126,33 +126,33 @@ button {
 
 
 #favorite .buttonIcon {
-	background:url(thumbs-up.png);
+	background:url(../images/appdetail/thumbs-up.png);
 	margin-right:20px;
 	background-size: 16px 16px;
 }
 
 #favorite.selected .buttonIcon {
-	background:url(thumbs-up-selected.png);
+	background:url(../images/appdetail/thumbs-up-selected.png);
 	background-size: 16px 16px;
 }
 
 #download .buttonIcon {
-	background:url(download.png);
+	background:url(../images/appdetail/download.png);
 	background-size: 16px 16px;
 }
 
 #download.selected .buttonIcon {
-	background:url(download-selected.png);
+	background:url(../images/appdetail/download-selected.png);
 	background-size: 16px 16px;
 }
 
 #save .buttonIcon {
-	background:url(save.png);
+	background:url(../images/appdetail/save.png);
 	background-size: 16px 16px;
 }
 
 #save.selected .buttonIcon {
-	background:url(staricon-selected.png);
+	background:url(../images/appdetail/staricon-selected.png);
 	background-size: 16px 16px;
 }
 
